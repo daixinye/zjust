@@ -5,7 +5,7 @@ const PORT = 8000
 
 let server = _http.createServer((req, res) => {
   return _handler(req, res, {
-    public: './doc'
+    public: './docs'
   })
 })
 

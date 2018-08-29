@@ -3,7 +3,7 @@ void (function () {
 
   window.onload = function () {
     var xhr = new window.XMLHttpRequest()
-    xhr.open('GET', '/data.json', true)
+    xhr.open('GET', './data.json', true)
     xhr.send()
 
     xhr.onreadystatechange = function (state) {
