@@ -6,7 +6,7 @@ void (function () {
     xhr.open('GET', './data.json', true)
     xhr.send()
 
-    xhr.onreadystatechange = function (state) {
+    xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
         shitis = JSON.parse(xhr.response)
       }
