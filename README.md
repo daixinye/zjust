@@ -21,7 +21,3 @@ $ npm run update
 ## 提供查询
 
 [点击此处进行查询](http://zjust.daixinye.com)
-
-## 自动做题
-
-开发中...
