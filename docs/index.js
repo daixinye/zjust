@@ -40,7 +40,7 @@ void (function () {
 
       _views.result.clear()
       _views.result.print(qas)
-    }
+    }.bind(this)
 
     this.fetchData = function () {
       var xhr = new window.XMLHttpRequest()
@@ -49,8 +49,7 @@ void (function () {
 
       xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
-          this.onLoaded(xhr.response)
-          this.shitis = JSON.parse(res)
+          this.shitis = JSON.parse(xhr.response)
         }
       }.bind(this)
     }
